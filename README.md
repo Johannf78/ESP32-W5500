@@ -2,6 +2,10 @@
 
 Getting started guide for the W5500 on a ESP32
 
+YouTube Video:
+https://youtu.be/UxywDA_jk80
+
+
 ESP32	w5500
 D5	  CS
 D18	  SCK
