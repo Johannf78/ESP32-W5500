@@ -28,6 +28,16 @@ void setup() {
     Serial.println("Ethernet hardware detected!");
   }
 
+  //Check if cable is connected
+  if (Ethernet.linkStatus() == LinkOFF) {
+    Serial.println("Link is OFF. Check cable connection.");
+  }
+  else {
+    Serial.println("Link is ON. Cable is connected. Ready to go!");
+    Serial.print("To test connection, please ping: ");
+    Serial.println(ip);
+  }
+
 }
 
 void loop() {
